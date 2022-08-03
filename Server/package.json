@@ -6,7 +6,7 @@
     "start": "ts-node server.ts",
     "server": "nodemon --transpile-only server.ts ",
     "run-Build": "nodemon  build/server.js ",
-    "build": "tsc -b -v -i -w",
+    "build": "tsc -p ./",
     "data:import": "node seeder",
     "data:destroy": "node seeder -d"
   },

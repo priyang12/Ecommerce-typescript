@@ -7,8 +7,11 @@
     "client": "npm run start --prefix Client",
     "server": "npm run server --prefix Server",
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
-    "build": "npm run build --prefix Client && npm run build --prefix Server",
-    "test": "cd Client && CI=true yarn run test:watch --passWithNoTests && cd ..",
+    "build:client": "npm run build --prefix Client",
+    "build:server": "npm run build --prefix Server",
+    "build": "yarn turbo run build",
+    "build:remove": "cd Client && rm -rf build && cd .. && cd Server && rm -rf build && cd ..",
+    "test": "yarn turbo run test",
     "data:import": "node Server/seeder",
     "data:destroy": "node Server/seeder -d",
     "e2e": "cypress open"

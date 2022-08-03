@@ -6,8 +6,7 @@
     },
     "test": {
       "outputs": ["coverage/**"],
-      "dependsOn": ["build"],
-      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts"],
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"],
       "outputMode": "full"
     },
     "dev": {
