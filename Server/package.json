@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-server",
+  "name": "ecommerce_server",
   "version": "1.0.0",
   "main": "server.ts",
   "scripts": {

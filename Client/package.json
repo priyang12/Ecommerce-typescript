@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce",
+  "name": "ecommerce_client",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5001",
